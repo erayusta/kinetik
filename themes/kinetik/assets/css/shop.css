@@ -1,0 +1,68 @@
+/* ==========================================================================
+   shop: mağaza / kategori / ürün araması — başlık, araç çubuğu, filtre paneli
+   (masaüstü kenar çubuğu, mobil çekmece), sayfalama.
+   ========================================================================== */
+.shop-head { padding: 18px 0 8px; }
+.shop-head__title { font-size: clamp(2.75rem, 8vw, 6rem); margin: 0; font-weight: 900; }
+.shop-head__desc { max-width: 60ch; color: var(--muted); margin: 10px 0 0; }
+
+.shop-toolbar { position: sticky; top: var(--header-h); z-index: 20; display: flex; align-items: center; gap: 12px; padding: 12px 0; margin: 12px 0 20px; background: var(--paper); border-bottom: 1px solid var(--line); }
+.shop-toolbar__count { font-size: var(--fs-sm); color: var(--muted); }
+.shop-toolbar__sort { margin-left: auto; }
+.shop-toolbar .woocommerce-ordering { margin: 0; }
+.shop-toolbar .woocommerce-ordering select { min-height: 40px; width: auto; max-width: 52vw; border-color: transparent; background-color: transparent; font-weight: 500; font-size: var(--fs-sm); padding: 8px 32px 8px 8px; background-position: right 8px center; }
+.filter-toggle__n { display: inline-grid; place-items: center; min-width: 20px; height: 20px; border-radius: 10px; background: var(--volt); color: var(--ink); font: 700 11px/1 var(--font-body); font-style: normal; }
+
+.shop-layout { display: block; }
+
+/* Filtre paneli — mobilde çekmece (sağdan) */
+.filters-backdrop { position: fixed; inset: 0; z-index: 90; background: rgba(0,0,0,.5); }
+.filters-backdrop[hidden] { display: none; }
+.filters {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 100; width: min(88vw, 380px);
+  background: var(--paper); overflow-y: auto; overscroll-behavior: contain; padding: 0 20px 24px;
+  transform: translateX(100%); visibility: hidden; transition: transform .3s var(--ease), visibility 0s .3s;
+}
+.filters-open { overflow: hidden; }
+.filters-open .filters { transform: none; visibility: visible; transition: transform .3s var(--ease); }
+.filters__head { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding: 12px 0; background: var(--paper); border-bottom: 1px solid var(--line); }
+.filters__title { font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: 1.75rem; text-transform: uppercase; }
+.filters__group { border: 0; margin: 0; padding: 20px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.filters__label { font: 600 var(--fs-sm)/1.2 var(--font-body); margin: 0 0 12px; padding: 0; }
+legend.filters__label { float: left; width: 100%; }
+legend.filters__label + * { clear: both; }
+.filters__cats { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.filters__cats a { display: flex; align-items: center; padding: 6px 0; text-decoration: none; font-size: var(--fs-sm); }
+.filters__cats a span { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+.filters__cats a[aria-current] { font-weight: 700; }
+.filters__cats a[aria-current]::before { content: ""; width: 10px; height: 10px; margin: auto 8px auto 0; background: var(--volt); clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%); outline: 1px solid var(--ink); }
+.filters__cats a:hover { text-decoration: underline; }
+.filters__sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.chip span { display: grid; place-items: center; min-width: 48px; height: 40px; padding: 0 10px; border: 1px solid var(--line); background: #fff; font-weight: 600; font-size: var(--fs-sm); }
+.chip input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
+.check { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-weight: 400; cursor: pointer; }
+.filters__price { display: flex; align-items: center; gap: 8px; }
+.filters__price label { flex: 1; }
+.filters__price input { min-height: 42px; }
+.filters__actions { padding-top: 20px; display: grid; gap: 12px; justify-items: center; }
+.filters__clear { font-size: var(--fs-sm); }
+
+@media (min-width: 1024px) {
+  .shop-layout { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; }
+  .filter-toggle, .filters__head, .filters-backdrop { display: none !important; }
+  .filters { position: sticky; top: calc(var(--header-h) + 80px); width: auto; transform: none; visibility: visible; padding: 0; background: none; overflow: visible; z-index: 1; max-height: none; }
+  .filters__group:first-of-type { padding-top: 0; }
+}
+
+/* Sayfalama */
+.shop-pagination { margin-top: 48px; }
+.shop-pagination.is-js { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px); }
+.load-more { display: flex; margin: 48px auto 0; min-width: 220px; }
+.woocommerce-pagination ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; border: 0; }
+.woocommerce-pagination li { border: 0; }
+.woocommerce-pagination a, .woocommerce-pagination span { display: grid; place-items: center; min-width: 42px; height: 42px; padding: 0 10px; border: 1px solid var(--line); text-decoration: none; font-weight: 600; }
+.woocommerce-pagination .current { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.woocommerce-result-count { display: none; }

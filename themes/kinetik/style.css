@@ -1,0 +1,14 @@
+/*
+Theme Name: KİNETİK
+Theme URI: https://github.com/erayusta/kinetik
+Author: Erusoft
+Author URI: https://erusoft.com
+Description: KİNETİK — Türkiye için WooCommerce spor giyim teması. Spor giyim mağazaları için klasik (blok olmayan) WooCommerce teması. CSS assets/css/ altında alan bazlı dosyalarda: base (token, tipografi, buton, form), layout (header, footer, çekmece, arama, çerez, toast), cards (ürün kartı), home, shop, product, checkout (sepet, ödeme, teşekkür, hesabım), pages (sayfa, iletişim, beden rehberi, 404, arama).
+Version: 1.0.0
+Requires PHP: 8.0
+Text Domain: kinetik
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: e-commerce, woocommerce, turkish
+*/
+/* Bu dosya yalnızca tema başlığını taşır; stiller assets/css/ altında. */

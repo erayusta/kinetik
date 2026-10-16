@@ -1,0 +1,205 @@
+/* ==========================================================================
+   KİNETİK — base: tokenlar, sıfırlama, tipografi, butonlar, formlar, etiketler,
+   WooCommerce bildirimleri ve fiyat. Diğer dosyalar yalnızca bu tokenları kullanır.
+   ========================================================================== */
+
+:root {
+  /* Renk */
+  --ink: #0D0D0D;          /* siyah — header, hero, footer */
+  --graphite: #1C1C1C;     /* koyu yüzey */
+  --graphite-2: #262626;   /* koyu yüzey üstü kart / çizgi */
+  --paper: #F3F1EC;        /* kırık beyaz — mağaza zemini */
+  --bone: #E6E3DB;         /* görsel zemini, ayraç */
+  --line: #D6D2C8;         /* açık zeminde çizgi */
+  --line-dark: #333;       /* koyu zeminde çizgi */
+  --volt: #C8FF2E;         /* vurgu — yalnızca ana CTA, rozet, seçili durum */
+  --volt-press: #B4EA14;
+  --muted: #66635C;        /* açık zeminde ikincil metin (AA) */
+  --muted-dark: #A9A69E;   /* koyu zeminde ikincil metin (AA) */
+  --danger: #C23A22;
+  --ok: #2F7D32;
+
+  /* Tipografi */
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-xs: .75rem;   /* 12 */
+  --fs-sm: .875rem;  /* 14 */
+  --fs-md: 1rem;     /* 16 */
+  --fs-lg: 1.25rem;  /* 20 */
+  --fs-xl: 1.75rem;  /* 28 */
+  --fs-2xl: 2.5rem;  /* 40 */
+  --fs-3xl: clamp(2.5rem, 6vw, 4.5rem);
+
+  /* Ölçü */
+  --wrap: 1360px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --header-h: 64px;
+  --radius: 2px;
+  --cut: 10px;             /* butonlardaki eğik köşe — logodaki hız kesiğinin ekosu */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+/* --------------------------------------------------------------- Sıfırlama */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 var(--fs-md)/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+img, svg, video { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+h1, h2, h3, h4 { margin: 0 0 .5em; line-height: 1.05; }
+p { margin: 0 0 1em; }
+ul, ol { padding-left: 1.2em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+table { border-collapse: collapse; width: 100%; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.is-dark :focus-visible, .site-header :focus-visible, .site-footer :focus-visible, .hero :focus-visible, .drawer :focus-visible { outline-color: var(--volt); }
+
+.screen-reader-text, .hp {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); white-space: nowrap;
+}
+.skip-link { position: absolute; left: 8px; top: -60px; z-index: 200; background: var(--volt); color: var(--ink); padding: 10px 16px; font-weight: 600; }
+.skip-link:focus { top: 8px; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+.muted { color: var(--muted); }
+
+/* --------------------------------------------------------------- Tipografi
+   Başlıklar: Barlow Condensed, eğik, büyük harf, sıkı satır. Türkçe büyük harf için lang="tr" şart
+   (text-transform: uppercase "i"yi "İ" yapar). */
+.display, .section-title, .page-head__title, .shop-head__title, .pdp-summary__title, .hero__title,
+.band__title, .notfound__title, .thanks__title, .summary-card__title, .dialog__title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.005em;
+  line-height: .95;
+}
+.section-title { font-size: clamp(2rem, 4.4vw, 3.25rem); margin: 0; }
+
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: clamp(20px, 3vw, 32px); }
+
+.link-arrow { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: var(--fs-sm); text-decoration: none; white-space: nowrap; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.link-arrow .icon { transition: transform .2s var(--ease); }
+.link-arrow:hover .icon { transform: translateX(3px); }
+
+/* --------------------------------------------------------------- Butonlar
+   Eğik kesik köşe (sağ alt) logodaki hız kesiğiyle aynı dili konuşur. */
+.btn, .button, .wc-proceed-to-checkout .checkout-button, #place_order {
+  --btn-bg: var(--ink); --btn-fg: var(--paper);
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 0 26px;
+  background: var(--btn-bg); color: var(--btn-fg);
+  border: 0; border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%);
+  font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1.1875rem;
+  text-transform: uppercase; letter-spacing: .02em; line-height: 1; text-decoration: none;
+  cursor: pointer; transition: background-color .15s, color .15s, transform .15s var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:active, .button:active { transform: translateY(1px); }
+.btn--primary, .single_add_to_cart_button, .wc-proceed-to-checkout .checkout-button, #place_order { --btn-bg: var(--volt); --btn-fg: var(--ink); }
+.btn--primary:hover, .single_add_to_cart_button:hover, .wc-proceed-to-checkout .checkout-button:hover, #place_order:hover { --btn-bg: var(--volt-press); }
+.btn--dark:hover, .button:hover { --btn-bg: #000; }
+.btn--light { --btn-bg: var(--paper); --btn-fg: var(--ink); }
+.btn--outline { --btn-bg: transparent; --btn-fg: var(--ink); clip-path: none; box-shadow: inset 0 0 0 1.5px currentColor; }
+.btn--outline:hover { --btn-bg: var(--ink); --btn-fg: var(--paper); }
+.btn--ghost-light { --btn-bg: transparent; --btn-fg: var(--paper); clip-path: none; box-shadow: inset 0 0 0 1.5px rgba(243,241,236,.6); }
+.btn--ghost-light:hover { box-shadow: inset 0 0 0 1.5px var(--paper); }
+.btn--sm { min-height: 40px; padding: 0 16px; font-size: 1rem; --cut: 7px; }
+.btn--block { width: 100%; }
+.btn[disabled], .button.disabled, .button:disabled, .single_add_to_cart_button.disabled { opacity: .45; cursor: not-allowed; }
+.button.is-loading, .btn.is-loading, .button.loading { opacity: .7; pointer-events: none; }
+.button.added::after { content: none; }
+a.added_to_cart { display: none; }
+
+.icon-btn {
+  display: inline-grid; place-items: center; width: 44px; height: 44px;
+  background: none; border: 0; padding: 0; color: inherit; position: relative; text-decoration: none;
+}
+
+/* --------------------------------------------------------------- Formlar */
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], input[type=search], input[type=url], select, textarea,
+.woocommerce form .input-text {
+  width: 100%; min-height: 48px; padding: 12px 14px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  font-size: 16px; /* iOS yakınlaştırmasın */ line-height: 1.3;
+  transition: border-color .15s, box-shadow .15s;
+}
+textarea { min-height: 120px; resize: vertical; }
+input:focus, select:focus, textarea:focus, .woocommerce form .input-text:focus { outline: 0; border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+select { appearance: none; -webkit-appearance: none; padding-right: 40px; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230D0D0D' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 14px center; }
+label { font-size: var(--fs-sm); font-weight: 500; }
+input[type=checkbox], input[type=radio] { accent-color: var(--ink); width: 18px; height: 18px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.field i { font-style: normal; color: var(--muted); font-weight: 400; }
+.field-row { display: grid; gap: 0 16px; }
+@media (min-width: 640px) { .field-row { grid-template-columns: 1fr 1fr; } }
+.field--check { flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 400; color: var(--muted); }
+.field--check input { flex: none; margin-top: 2px; }
+
+/* --------------------------------------------------------------- Etiket / rozet
+   Paralelkenar: logodaki volt sekmenin şekli. */
+.tag {
+  display: inline-block; padding: 4px 10px 3px;
+  background: var(--ink); color: var(--paper);
+  font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: .875rem; letter-spacing: .02em; text-transform: uppercase; line-height: 1.1;
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+  padding-inline: 12px;
+}
+.tag--volt { background: var(--volt); color: var(--ink); }
+.tag--muted { background: var(--bone); color: var(--muted); }
+
+.pending-field { display: inline-block; padding: 0 6px; background: rgba(200, 255, 46, .25); border: 1px dashed #8AA61E; color: #4B5C0D; font-size: .92em; border-radius: 2px; }
+.site-footer .pending-field, .is-dark .pending-field { background: rgba(200, 255, 46, .08); color: var(--volt); border-color: rgba(200,255,46,.5); }
+
+/* --------------------------------------------------------------- Fiyat */
+.price, .amount { font-variant-numeric: tabular-nums; }
+.price del { color: var(--muted); font-weight: 400; margin-right: 6px; }
+.price ins { text-decoration: none; }
+.woocommerce-Price-currencySymbol { font-size: .92em; }
+
+/* --------------------------------------------------------------- WooCommerce bildirimleri */
+.woocommerce-notices-wrapper:empty { display: none; }
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  list-style: none; margin: 0 0 20px; padding: 14px 16px 14px 18px;
+  background: #fff; border-left: 4px solid var(--ink); font-size: var(--fs-sm);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px;
+}
+.woocommerce-message { border-left-color: var(--volt); }
+.woocommerce-error { border-left-color: var(--danger); flex-direction: column; align-items: flex-start; }
+.woocommerce-error li { margin: 0; }
+.woocommerce-message .button, .woocommerce-info .button { order: 2; margin-left: auto; min-height: 36px; padding: 0 14px; font-size: .95rem; --cut: 6px; }
+.woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before { content: none; }
+
+/* --------------------------------------------------------------- Boş durum */
+.empty-state { padding: 48px 0; max-width: 520px; }
+.empty-state__title { font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: 2rem; text-transform: uppercase; line-height: 1; margin-bottom: 12px; }
+.empty-state .btn { margin-top: 8px; }
+.return-to-shop { margin-top: 0; }
+
+/* --------------------------------------------------------------- WooCommerce yardımcıları
+   (WooCommerce'in kendi CSS'i yüklenmiyor — gereken küçük parçalar burada) */
+.woocommerce .clear, .woocommerce::after { clear: both; }
+.password-input { position: relative; display: block; }
+.show-password-input { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border: 0; background: none; padding: 0; }
+.show-password-input::before { content: ""; display: block; width: 20px; height: 20px; margin: auto; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E") center / contain no-repeat; }
+.woocommerce-password-strength { font-size: var(--fs-xs); padding: 6px 8px; margin-top: 6px; background: var(--bone); }
+.woocommerce-password-strength.strong { background: var(--volt); }
+.woocommerce-password-hint { font-size: var(--fs-xs); color: var(--muted); }
+.woocommerce-store-notice { display: none !important; }
+.blockUI.blockOverlay { background: rgba(243,241,236,.6) !important; }
+.wc-item-meta { list-style: none; padding: 0; margin: 4px 0 0; font-size: var(--fs-xs); color: var(--muted); }
+.wc-item-meta li, .wc-item-meta p { display: inline; margin: 0; }

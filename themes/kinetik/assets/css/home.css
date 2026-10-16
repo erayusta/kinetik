@@ -1,0 +1,107 @@
+/* ==========================================================================
+   home: hero, kategori karoları, yeni gelenler, kampanya bandı, lookbook, güven şeridi.
+   ========================================================================== */
+
+/* --------------------------------------------------------------- Hero
+   Sayfanın tek gösterişli anı: siyah-beyaz fotoğraf üzerinde dev, eğik slogan
+   ve altında logodaki volt sekme. */
+.hero { position: relative; min-height: min(84svh, 760px); display: flex; align-items: flex-end; background: var(--ink); color: var(--paper); overflow: hidden; isolation: isolate; }
+.hero__media { position: absolute; inset: 0; z-index: -1; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(13,13,13,.55) 0%, rgba(13,13,13,.2) 45%, rgba(13,13,13,0) 70%), linear-gradient(180deg, rgba(13,13,13,.2) 0%, rgba(13,13,13,.1) 35%, rgba(13,13,13,.6) 65%, rgba(13,13,13,.92) 100%); }
+.hero__content { padding-top: 120px; padding-bottom: clamp(32px, 6vw, 72px); }
+.hero__title {
+  font-size: clamp(3.75rem, 15vw, 10.5rem); font-weight: 900; line-height: .84; letter-spacing: -.01em;
+  max-width: 11ch; margin: 0 0 22px; text-wrap: balance;
+}
+.hero__title::after { content: ""; display: block; width: clamp(96px, 16vw, 200px); height: clamp(10px, 1.4vw, 16px); margin-top: clamp(14px, 2vw, 24px); background: var(--volt); clip-path: polygon(14% 0, 100% 0, 86% 100%, 0 100%); }
+.hero__lead { max-width: 38ch; font-size: clamp(1rem, 1.6vw, 1.1875rem); color: #D8D5CE; margin-bottom: 28px; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (min-width: 1024px) {
+  .hero { min-height: min(88vh, 900px); }
+  .hero__media img { object-position: 50% 40%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero__title, .hero__lead, .hero__actions { animation: hero-in .7s var(--ease) both; }
+  .hero__lead { animation-delay: .12s; }
+  .hero__actions { animation-delay: .2s; }
+  @keyframes hero-in { from { opacity: 0; transform: translateY(18px); } }
+}
+
+/* --------------------------------------------------------------- Kategori karoları */
+.home-cats { padding-top: clamp(56px, 8vw, 104px); }
+.cat-tiles { display: grid; grid-auto-flow: column; grid-auto-columns: 68%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scrollbar-width: none; }
+.cat-tiles::-webkit-scrollbar { display: none; }
+.cat-tile { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; background: var(--graphite); color: var(--paper); text-decoration: none; scroll-snap-align: start; }
+.cat-tile__img, .cat-tile__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cat-tile__img img { object-position: 50% 15%; transition: transform .7s var(--ease); }
+.cat-tile::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgba(13,13,13,.85)); }
+.cat-tile__body { position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 1; display: grid; gap: 2px; }
+.cat-tile__name { font-family: var(--font-display); font-style: italic; font-weight: 900; text-transform: uppercase; font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: .9; }
+.cat-tile__count { font-size: var(--fs-xs); color: #D8D5CE; }
+.cat-tile:hover .cat-tile__img img { transform: scale(1.04); }
+.cat-tile:hover .cat-tile__name { color: var(--volt); }
+@media (min-width: 900px) {
+  .cat-tiles { grid-auto-flow: row; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); grid-auto-columns: auto; overflow: visible; margin: 0; padding: 0; gap: 12px; aspect-ratio: 16 / 9; }
+  .cat-tile { aspect-ratio: auto; }
+  .cat-tile--1 { grid-row: span 2; }
+  .cat-tile--1 .cat-tile__name { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+  .cat-tiles .cat-tile:nth-child(n+4) { grid-row: 2; }
+  .cat-tile--2 { grid-column: 2; grid-row: 1; } .cat-tile--3 { grid-column: 3; grid-row: 1; }
+  .cat-tile--4 { grid-column: 2; grid-row: 2; } .cat-tile--5 { grid-column: 3; grid-row: 2; }
+}
+
+/* --------------------------------------------------------------- Yeni gelenler */
+.home-new { padding-top: clamp(64px, 9vw, 120px); }
+
+/* --------------------------------------------------------------- Kampanya bandı (volt: sayfadaki tek geniş volt yüzey) */
+.band { display: grid; margin-top: clamp(64px, 9vw, 120px); background: var(--volt); color: var(--ink); }
+.band__img { position: relative; min-height: 260px; overflow: hidden; background: var(--volt); }
+.band__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; mix-blend-mode: multiply; filter: contrast(1.15); }
+.band__body { padding: 40px var(--gutter) 48px; align-self: center; max-width: 640px; }
+.band__title { font-size: clamp(2.75rem, 7vw, 5.5rem); font-weight: 900; line-height: .86; margin-bottom: 18px; }
+.band__text { font-size: var(--fs-md); max-width: 44ch; }
+.band__text strong { font-weight: 700; background: var(--ink); color: var(--volt); padding: 1px 6px; }
+.band .kinetik-newsletter__form { max-width: 460px; margin-top: 8px; }
+.band .kinetik-newsletter__form input[type=email] { border: 1.5px solid var(--ink); background: #fff; }
+.band .kinetik-newsletter__form button { background: var(--ink); color: var(--volt); }
+.band .kinetik-newsletter__legal { color: rgba(13,13,13,.7); max-width: 460px; }
+.band .kinetik-newsletter__result.is-success { font-weight: 600; }
+@media (min-width: 900px) {
+  .band { grid-template-columns: 1fr 1.1fr; min-height: 520px; }
+  .band__body { padding: 64px clamp(32px, 5vw, 80px); }
+}
+
+/* --------------------------------------------------------------- Lookbook */
+.look { padding-top: clamp(64px, 9vw, 120px); }
+.look__strip { display: grid; grid-auto-flow: column; grid-auto-columns: 72%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scrollbar-width: none; }
+.look__strip::-webkit-scrollbar { display: none; }
+.look__item { position: relative; display: block; aspect-ratio: 3 / 4; overflow: hidden; background: var(--graphite); text-decoration: none; scroll-snap-align: start; }
+.look__item img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.look__item:hover img { transform: scale(1.04); }
+.look__cap { position: absolute; left: 0; bottom: 0; display: grid; gap: 2px; padding: 12px 16px 12px 14px; background: var(--paper); max-width: 86%; }
+.look__cap b { font-family: var(--font-display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 1.5rem; line-height: 1; }
+.look__cap span { font-size: var(--fs-sm); color: var(--muted); }
+@media (min-width: 900px) {
+  .look__strip { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); overflow: visible; margin: 0; padding: 0; gap: 16px; align-items: start; }
+  .look__item:nth-child(2) { margin-top: 72px; }
+}
+
+/* --------------------------------------------------------------- Güven şeridi */
+.trust { margin-top: clamp(64px, 9vw, 112px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trust__list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; padding-top: 0; padding-bottom: 0; }
+.trust__list li { display: grid; gap: 4px; align-content: start; padding: 24px 12px 24px 0; }
+.trust__list li:nth-child(odd) { border-right: 1px solid var(--line); }
+.trust__list li:nth-child(even) { padding-left: 16px; }
+.trust__list li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+.trust__list .icon { margin-bottom: 6px; }
+.trust__list b { font-family: var(--font-display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 1.375rem; line-height: 1; }
+.trust__list span { font-size: var(--fs-sm); color: var(--muted); }
+@media (min-width: 900px) {
+  .trust__list { grid-template-columns: repeat(4, 1fr); }
+  .trust__list li { padding: 32px 24px; border-bottom: 0 !important; border-right: 1px solid var(--line); }
+  .trust__list li:nth-child(even) { padding-left: 24px; }
+  .trust__list li:first-child { padding-left: 0; }
+  .trust__list li:last-child { border-right: 0; }
+}
+.trust + .site-footer, .site-main:has(.trust) + .site-footer { margin-top: 0; }

@@ -1,0 +1,506 @@
+[
+  {
+    "sku": "KNT-TS-001",
+    "name": "Pace Slim Tişört – Optik Beyaz",
+    "category": "tisort",
+    "gender": "Erkek",
+    "price": 549,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Optik Beyaz",
+    "featured": false,
+    "images": [
+      "KNT-TS-001-1.jpg"
+    ],
+    "short_description": "Vücudu saran, temiz hatlı beyaz tişört. Tek başına da, katmanın altında da kusursuz.",
+    "description": "<p>Net bir beyaz, sade bir yaka, düzgün oturan bir gövde. Pace Slim, antrenman sonrası kahveden ofis gününe kadar her yerde aynı derli toplu görüntüyü veren bir temel parça.</p><ul><li>İnce ribanalı bisiklet yaka</li><li>Kol ağzında katlanmış görünümlü bitiş</li><li>Logosuz, sade ön yüz</li></ul><h3>Kalıp</h3><p>Slim kalıp: omuzlarda ve göğüste vücuda yakın durur, beli hafifçe takip eder. Daha rahat bir kullanım için bir beden büyüğünü seçebilirsiniz.</p><h3>Kombin önerisi</h3><p>Koyu renk jogger ya da chino ile; serin günlerde açık fermuarlı bir hoodie veya ceketin altında.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-TS-002",
+    "name": "Pace Slim Tişört – Gece Siyahı",
+    "category": "tisort",
+    "gender": "Unisex",
+    "price": 549,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Gece Siyahı",
+    "featured": true,
+    "images": [
+      "KNT-TS-002-1.jpg"
+    ],
+    "short_description": "Her kombine uyan, zamansız siyah tişört. Keskin, sade ve günlük kullanıma hazır.",
+    "description": "<p>Gardırobun en çok çalışan parçası. Gece Siyahı Pace Slim, temiz yakası ve sade önüyle hem salon çantasında hem şehirde yerini alır.</p><ul><li>İnce ribanalı bisiklet yaka</li><li>Yan dikişli, düzgün duran gövde</li><li>Unisex beden aralığı</li></ul><h3>Kalıp</h3><p>Slim kalıp: vücuda yakın, gereksiz bolluk olmadan oturur. Kadınlar için bir beden küçüğü önerilir.</p><h3>Kombin önerisi</h3><p>Denim, kargo pantolon ya da eşofman altıyla; üzerine açık renk bir overshirt ile katmanlayın.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-TS-003",
+    "name": "Cep Detaylı Tişört – Gri Melanj",
+    "category": "tisort",
+    "gender": "Erkek",
+    "price": 599,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Gri Melanj",
+    "featured": false,
+    "images": [
+      "KNT-TS-003-1.jpg"
+    ],
+    "short_description": "Göğüs cepli, yumuşak tuşeli gri melanj tişört. Rahat günlerin vazgeçilmezi.",
+    "description": "<p>Klasik bir formu küçük bir detayla canlandırdık: düğmeli göğüs cebi. Melanj dokusu ve yumuşak tuşesiyle gün boyu rahat eden, kendinden emin bir parça.</p><ul><li>Düğmeli göğüs cebi</li><li>Ham kesim görünümlü yaka bitişi</li><li>Melanj dokulu örme kumaş</li></ul><h3>Kalıp</h3><p>Regular kalıp: ne dar ne bol; omuz dikişi doğal omuz hizasında durur.</p><h3>Kombin önerisi</h3><p>Siyah jogger ve beyaz spor ayakkabıyla; serin akşamlarda üzerine fermuarlı bir sweatshirt ekleyin.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-TS-004",
+    "name": "Drop Oversize Tişört – Kırmızı",
+    "category": "tisort",
+    "gender": "Kadın",
+    "price": 649,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Kırmızı",
+    "featured": true,
+    "images": [
+      "KNT-TS-004-1.jpg"
+    ],
+    "short_description": "Canlı kırmızı, düşük omuzlu oversize tişört. Sade kombinlere tek hamlede enerji katar.",
+    "description": "<p>Tek parçayla dikkat çekmek isteyenler için. Drop Oversize; düşük omuzu, dirseğe inen kolları ve arkası hafif uzun eteğiyle rahat ama iddialı bir siluet çizer.</p><ul><li>Düşük omuz dikişi, dirsek boyu kol</li><li>Arka eteği öne göre hafif uzun</li><li>Sade, baskısız ön yüz</li></ul><h3>Kalıp</h3><p>Oversize kalıp: bol ve dökümlü durması için tasarlandı. Daha kontrollü bir görünüm için bir beden küçüğünü tercih edin.</p><h3>Kombin önerisi</h3><p>Beyaz ya da siyah biker şort, geniş paça eşofman altı veya düz kesim jean ile.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-TS-005",
+    "name": "Ters Dikiş Oversize Tişört – Taş Grisi",
+    "category": "tisort",
+    "gender": "Kadın",
+    "price": 699,
+    "sale_price": 599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Taş Grisi",
+    "featured": false,
+    "images": [
+      "KNT-TS-005-1.jpg"
+    ],
+    "short_description": "Dışa dönük dikiş detaylı, yıkanmış görünümlü taş grisi oversize tişört.",
+    "description": "<p>Detay sevenlere: omuz ve kol dikişleri bilerek dışarıda bırakıldı. Taş Grisi tonu ve yıkanmış görünümüyle sokak stiline doğal bir dokunuş.</p><ul><li>Dışa dönük omuz ve kol dikişleri</li><li>Düşük omuz, geniş gövde</li><li>Yıkanmış görünümlü renk</li></ul><h3>Kalıp</h3><p>Oversize kalıp: gövde geniş ve düz düşer. Normal bedeninizi seçmeniz önerilir.</p><h3>Kombin önerisi</h3><p>Siyah geniş paça pantolon ve tıknaz spor ayakkabıyla; aksesuar olarak ince bir güneş gözlüğü yeter.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-TS-006",
+    "name": "Relaxed Tişört – Orman Yeşili",
+    "category": "tisort",
+    "gender": "Unisex",
+    "price": 599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Orman Yeşili",
+    "featured": false,
+    "images": [
+      "KNT-TS-006-1.jpg"
+    ],
+    "short_description": "Derin yeşil tonunda, rahat kesimli günlük tişört. Nötr gardıroba renk katar.",
+    "description": "<p>Orman Yeşili, siyah ve beyazın dışına çıkmak isteyenler için güvenli bir renk. Relaxed kalıbı ve kalın ribanalı yakasıyla her gün giymek isteyeceğiniz bir tişört.</p><ul><li>Kalın ribanalı bisiklet yaka</li><li>Hafif düşük omuz</li><li>Unisex beden aralığı</li></ul><h3>Kalıp</h3><p>Relaxed kalıp: gövdede rahat, boyda standart. Bol görünüm için bir beden büyüğü seçilebilir.</p><h3>Kombin önerisi</h3><p>Bej ya da ekru eşofman altıyla ton ton; denim şort ve beyaz çorapla yaz kombini.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ES-001",
+    "name": "Cloud Oversize Eşofman Takımı – Şeker Pembe",
+    "category": "esofman",
+    "gender": "Kadın",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Şeker Pembe",
+    "featured": true,
+    "images": [
+      "KNT-ES-001-1.jpg",
+      "KNT-ES-001-2.jpg"
+    ],
+    "short_description": "Kapüşonlu üst ve geniş paça alttan oluşan, baştan ayağa pembe oversize takım.",
+    "description": "<p>Rahatlığın en renkli hali. Cloud takımı; bol kapüşonlu üstü ve yere kadar inen geniş paça altıyla evde, yolda ve hafta sonu planlarında aynı rahatlığı sunar.</p><ul><li>Kanguru cepli kapüşonlu üst</li><li>Lastikli, bağcıklı bel; yan cepli geniş paça alt</li><li>Paçalarda büzgü ipi</li></ul><h3>Kalıp</h3><p>Oversize kalıp: üst bol ve düşük omuzlu, alt geniş paçalıdır. Normal bedeninizi seçin; daha az hacim için bir beden küçüğü.</p><h3>Kombin önerisi</h3><p>Takım olarak tek renk giyin ya da üstü beyaz bir tişörtle, altı kısa bir sweatshirtle ayrı kombinleyin.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ES-002",
+    "name": "Cloud Oversize Eşofman Takımı – Gri Melanj",
+    "category": "esofman",
+    "gender": "Kadın",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Gri Melanj",
+    "featured": true,
+    "images": [
+      "KNT-ES-002-1.jpg",
+      "KNT-ES-002-2.jpg"
+    ],
+    "short_description": "Ham kesim bel detaylı, geniş paçalı gri melanj oversize takım.",
+    "description": "<p>Gri melanj, rahat giyimin klasiği. Cloud takımının bu renginde altın belinde ham kesim kenar ve metal halka detayı, sade görünüme sokak havası katıyor.</p><ul><li>Kanguru cepli kapüşonlu üst, büzgülü manşetler</li><li>Ham kesim kenarlı bel, metal halka detayı</li><li>Geniş, düz düşen paçalar</li></ul><h3>Kalıp</h3><p>Oversize kalıp: bol ve hacimli bir siluet için tasarlandı. Normal bedeninizi seçmeniz önerilir.</p><h3>Kombin önerisi</h3><p>Gümüş ya da beyaz spor ayakkabıyla; üstü tek başına bir biker şort üzerinde de giyebilirsiniz.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ES-003",
+    "name": "Cloud Oversize Eşofman Takımı – Bordo",
+    "category": "esofman",
+    "gender": "Kadın",
+    "price": 2199,
+    "sale_price": 1899,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Bordo",
+    "featured": false,
+    "images": [
+      "KNT-ES-003-1.jpg"
+    ],
+    "short_description": "Derin bordo tonunda, uzun kesimli kapüşonlu üst ve geniş paça alt.",
+    "description": "<p>Mevsim geçişlerinin rengi bordo. Cloud takımının bu versiyonu, uzun kesimli üstü ve yere değen paçalarıyla iddialı ama rahat bir duruş sunar.</p><ul><li>Geniş kapüşon, kanguru cep</li><li>Lastikli bel, yan cepler</li><li>Yere kadar uzanan geniş paça</li></ul><h3>Kalıp</h3><p>Oversize kalıp: hacimli ve uzun. Boyunuz kısa ise paçaları ayakkabının üzerinde toplayarak giyebilirsiniz.</p><h3>Kombin önerisi</h3><p>Kahverengi ya da siyah sneaker ile; üstü krem bir tişörtün üzerine açık bırakılmış ceket gibi kullanın.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ES-004",
+    "name": "Cloud Oversize Eşofman Takımı – Espresso",
+    "category": "esofman",
+    "gender": "Kadın",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Espresso",
+    "featured": false,
+    "images": [
+      "KNT-ES-004-1.jpg"
+    ],
+    "short_description": "Koyu kahve tonunda, paçası büzgülü oversize kapüşonlu takım.",
+    "description": "<p>Siyahın daha sıcak alternatifi: Espresso. Büzgü ipli paçaları sayesinde altı ister uzun ister jogger gibi toplanmış giyilebilir.</p><ul><li>Kanguru cepli kapüşonlu üst</li><li>Paçalarda büzgü ipi</li><li>Lastikli, bağcıklı bel</li></ul><h3>Kalıp</h3><p>Oversize kalıp: rahat ve hacimli. Normal bedeninizi seçmeniz önerilir.</p><h3>Kombin önerisi</h3><p>Bej ya da krem tonlarında ayakkabı ve kalın çorapla; üstü ekru bir şortla yazın da kullanılabilir.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ES-005",
+    "name": "Crop Eşofman Takımı – Lila",
+    "category": "esofman",
+    "gender": "Kadın",
+    "price": 1899,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Lila",
+    "featured": false,
+    "images": [
+      "KNT-ES-005-1.jpg",
+      "KNT-ES-005-2.jpg"
+    ],
+    "short_description": "Bağcıklı crop sweatshirt ve dar paça jogger: pastel lila iki parça takım.",
+    "description": "<p>Pastel ve dinamik. Crop takımında üst, bel hizasında bağlanabilen ipiyle kısa bir siluet çizer; jogger alt ise manşetli paçasıyla bileği temiz bitirir.</p><ul><li>Bel hizasında bağcıklı crop üst</li><li>Manşetli, dar paça jogger</li><li>Yan cepli, bağcıklı bel</li></ul><h3>Kalıp</h3><p>Üst crop ve hafif bol; alt bileğe doğru daralan jogger kalıp. Normal bedeninizi seçin.</p><h3>Kombin önerisi</h3><p>Siyah tıknaz bot ya da beyaz sneaker ile; üstü yüksek bel bir taytla da kombinleyebilirsiniz.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-SH-001",
+    "name": "Core Hoodie – Siyah",
+    "category": "sweatshirt-hoodie",
+    "gender": "Unisex",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Siyah",
+    "featured": true,
+    "images": [
+      "KNT-SH-001-1.jpg"
+    ],
+    "short_description": "Sade, logosuz siyah kapüşonlu sweatshirt. Her mevsim çantadan eksik olmayan parça.",
+    "description": "<p>Core Hoodie, gereksiz hiçbir detay taşımadan işini yapan bir kapüşonlu. Ribanalı manşetleri ve dolgun kapüşonuyla antrenmana giderken de, dönüşte de aynı rahatlığı verir.</p><ul><li>Çift kat kapüşon</li><li>Ribanalı manşet ve etek</li><li>Logosuz, sade yüzey</li></ul><h3>Kalıp</h3><p>Regular kalıp: omuz hizasında oturur, gövdede rahat hareket alanı bırakır. Oversize görünüm için bir beden büyüğü.</p><h3>Kombin önerisi</h3><p>Siyah ya da gri jogger ile tek renk; altına beyaz bir tişört ekleyip yakadan görünmesini sağlayın.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-SH-002",
+    "name": "Core Hoodie – Gece Mavisi",
+    "category": "sweatshirt-hoodie",
+    "gender": "Erkek",
+    "price": 1299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Gece Mavisi",
+    "featured": false,
+    "images": [
+      "KNT-SH-002-1.jpg"
+    ],
+    "short_description": "Kontrast siyah bağcıklı, metal halkalı gece mavisi kapüşonlu.",
+    "description": "<p>Grinin içine bir damla mavi: Gece Mavisi. Kontrast siyah bağcıklar ve metal halkalar sade gövdeye küçük ama belirgin bir karakter katıyor.</p><ul><li>Metal halkalı, kontrast bağcıklı kapüşon</li><li>Ribanalı manşet ve etek</li><li>Kanguru cep</li></ul><h3>Kalıp</h3><p>Regular kalıp: standart omuz ve boy. Normal bedeninizi seçmeniz önerilir.</p><h3>Kombin önerisi</h3><p>Siyah eşofman altı ve beyaz sneaker ile; altına gri melanj bir tişört katmanlayın.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-SH-003",
+    "name": "Core Hoodie – Kahve",
+    "category": "sweatshirt-hoodie",
+    "gender": "Erkek",
+    "price": 1299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Kahve",
+    "featured": false,
+    "images": [
+      "KNT-SH-003-1.jpg"
+    ],
+    "short_description": "Toprak tonlarında, ince bağcıklı koyu kahve kapüşonlu sweatshirt.",
+    "description": "<p>Siyahın sıcak kuzeni. Kahve Core Hoodie, doğal tonlu kombinlerle kolayca uyuşur; ince bağcıkları ve geniş kapüşonuyla sakin bir duruş sunar.</p><ul><li>İnce bağcıklı geniş kapüşon</li><li>Kanguru cep</li><li>Ribanalı manşetler</li></ul><h3>Kalıp</h3><p>Regular kalıp, hafif rahat gövde. Normal bedeninizi seçin.</p><h3>Kombin önerisi</h3><p>Bej chino, ekru eşofman altı veya koyu denim ile; altına açık renk bir gömlek yakası çıkarın.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-SH-004",
+    "name": "Studio Hoodie – Buz Beyazı",
+    "category": "sweatshirt-hoodie",
+    "gender": "Kadın",
+    "price": 1249,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Buz Beyazı",
+    "featured": false,
+    "images": [
+      "KNT-SH-004-1.jpg"
+    ],
+    "short_description": "Temiz, aydınlık buz beyazı kapüşonlu. Biker şort ve taytla kusursuz eşleşir.",
+    "description": "<p>Studio Hoodie, salondan çıkışta üzerine geçirip öylece yola devam edebileceğiniz parça. Buz Beyazı tonu sade bir tayt ya da biker şortla temiz bir kontrast kurar.</p><ul><li>Klasik kapüşon</li><li>Geniş kanguru cep</li><li>Ribanalı manşet ve etek</li></ul><h3>Kalıp</h3><p>Regular kalıp: kalçanın hemen üstünde biter. Daha bol bir görünüm için bir beden büyüğü seçin.</p><h3>Kombin önerisi</h3><p>Siyah biker şort ve uzun çorapla atletik; geniş paça eşofman altıyla rahat bir şehir kombini.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-SH-005",
+    "name": "Yarım Fermuarlı Kapüşonlu Sweat – Hardal",
+    "category": "sweatshirt-hoodie",
+    "gender": "Kadın",
+    "price": 1199,
+    "sale_price": 999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Hardal",
+    "featured": false,
+    "images": [
+      "KNT-SH-005-1.jpg"
+    ],
+    "short_description": "Yarım fermuarlı, kapaklı cep detaylı kısa kesim hardal sweatshirt.",
+    "description": "<p>Fonksiyon ve stil bir arada: yarım fermuarlı yakası sayesinde açıp kapatarak ısınızı ayarlayabilir, kapaklı göğüs cebinde küçük eşyalarınızı taşıyabilirsiniz.</p><ul><li>Yarım fermuarlı kapüşonlu yaka</li><li>Kapaklı yama cep</li><li>Kalın ribanalı etek ve manşet</li></ul><h3>Kalıp</h3><p>Kısa kesim, vücuda yakın kalıp. Beli hafif açıkta bırakır; rahat kullanım için bir beden büyüğü.</p><h3>Kombin önerisi</h3><p>Yüksek bel geniş paça pantolon ya da tayt ile; koyu tonlu botlarla sonbahar kombini.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ST-001",
+    "name": "Form Biker Şort – Siyah",
+    "category": "sort-tayt",
+    "gender": "Kadın",
+    "price": 549,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Siyah",
+    "featured": false,
+    "images": [
+      "KNT-ST-001-1.jpg"
+    ],
+    "short_description": "Yüksek belli, diz üstü boyda siyah biker şort. Salonda da sokakta da.",
+    "description": "<p>Form Biker Şort, hareket ederken yerinde kalan yüksek beli ve diz üstünde biten boyuyla antrenmanın da günlük hayatın da parçası olur.</p><ul><li>Yüksek bel</li><li>Diz üstü boy</li><li>Esnek, vücudu saran örme kumaş</li></ul><h3>Kalıp</h3><p>Dar kalıp: vücudu sarar, hareketle birlikte esner. Normal bedeninizi seçin.</p><h3>Kombin önerisi</h3><p>Spor büstiyer ve oversize bir tişört ya da hoodie ile; uzun çorap ve bot ile şehirde.</p><h3>Bakım</h3><p>30°C'de hassas programda yıkayın, yumuşatıcı kullanmayın. Kurutma makinesine atmayın ve ütülemeyin; gölgede kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ST-002",
+    "name": "Pulse Yüksek Bel Tayt – Bordo",
+    "category": "sort-tayt",
+    "gender": "Kadın",
+    "price": 799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Bordo",
+    "featured": true,
+    "images": [
+      "KNT-ST-002-1.jpg",
+      "KNT-ST-002-2.jpg"
+    ],
+    "short_description": "Bileğin hemen üstünde biten, yüksek belli bordo tayt. Klasik siyaha güçlü alternatif.",
+    "description": "<p>Pulse, bacak boyunca temiz bir hat çizen yüksek belli bir tayt. Bordo tonu sade bir crop üstle bile kombine renk katar.</p><ul><li>Yüksek, geniş bel bandı</li><li>Bilek üstü boy</li><li>Arka cep detayı</li></ul><h3>Kalıp</h3><p>Dar kalıp: belden bileğe vücudu takip eder. İki beden arasında kaldıysanız büyüğünü seçin.</p><h3>Kombin önerisi</h3><p>Siyah crop üst ya da kısa sweatshirt ile; üzerine oversize bir hoodie alıp antrenmana gidin.</p><h3>Bakım</h3><p>30°C'de hassas programda yıkayın, yumuşatıcı kullanmayın. Kurutma makinesine atmayın ve ütülemeyin; gölgede kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ST-003",
+    "name": "Pulse Yüksek Bel Tayt – Siyah",
+    "category": "sort-tayt",
+    "gender": "Kadın",
+    "price": 749,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Siyah",
+    "featured": false,
+    "images": [
+      "KNT-ST-003-1.jpg"
+    ],
+    "short_description": "Her antrenmanın temel parçası: yüksek belli, tam boy siyah tayt.",
+    "description": "<p>Siyah tayt hiçbir zaman fazla değildir. Pulse Siyah; yüksek beli ve tam boyuyla yogadan koşu bandına, oradan kahve molasına kadar eşlik eder.</p><ul><li>Yüksek, geniş bel bandı</li><li>Tam boy</li><li>Esnek, opak görünümlü kumaş</li></ul><h3>Kalıp</h3><p>Dar kalıp: vücudu sarar, rahat hareket alanı bırakır. Normal bedeninizi seçin.</p><h3>Kombin önerisi</h3><p>Beyaz atlet ya da crop tişört ile; serin havada üzerine bir kapüşonlu ekleyin.</p><h3>Bakım</h3><p>30°C'de hassas programda yıkayın, yumuşatıcı kullanmayın. Kurutma makinesine atmayın ve ütülemeyin; gölgede kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ST-004",
+    "name": "Dikişsiz Tayt – Mürdüm",
+    "category": "sort-tayt",
+    "gender": "Kadın",
+    "price": 849,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colour": "Mürdüm",
+    "featured": false,
+    "images": [
+      "KNT-ST-004-1.jpg"
+    ],
+    "short_description": "Dikişsiz örgü, ribanalı bel bandı: mürdüm renkli antrenman taytı.",
+    "description": "<p>Dikişsiz örgü tekniğiyle üretilen bu tayt, sürtünme yaratacak yan dikişler olmadan vücudu sarar. Ribanalı yüksek bel bandı hareket ederken yerinde kalır.</p><ul><li>Dikişsiz örgü yapı</li><li>Ribanalı yüksek bel bandı</li><li>Tam boy</li></ul><h3>Kalıp</h3><p>Dar, vücudu saran kalıp. İki beden arasında kaldıysanız büyüğünü seçin.</p><h3>Kombin önerisi</h3><p>Aynı tonda bir spor büstiyerle takım gibi; üzerine siyah bir hoodie ile salondan çıkış.</p><h3>Bakım</h3><p>30°C'de hassas programda yıkayın, yumuşatıcı kullanmayın. Kurutma makinesine atmayın ve ütülemeyin; gölgede kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-ST-005",
+    "name": "Pileli Günlük Şort – Kum Beji",
+    "category": "sort-tayt",
+    "gender": "Erkek",
+    "price": 749,
+    "sale_price": 649,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colour": "Kum Beji",
+    "featured": false,
+    "images": [
+      "KNT-ST-005-1.jpg"
+    ],
+    "short_description": "Önden pile dikişli, lastikli belli kum beji günlük şort.",
+    "description": "<p>Yaz günleri için temiz ve rahat bir şort. Ön yüzdeki pile dikişleri sade forma derli toplu bir görüntü verir; lastikli beli gün boyu rahat ettirir.</p><ul><li>Önden pile dikiş detayı</li><li>Lastikli, bağcıklı bel</li><li>Yan cepler</li></ul><h3>Kalıp</h3><p>Relaxed kalıp, diz üstü boy. Normal bedeninizi seçin.</p><h3>Kombin önerisi</h3><p>Kahve ya da beyaz bir tişört ve sade sneaker ile; serin akşamlarda omza atılan bir hırka yeter.</p><h3>Bakım</h3><p>Ters yüz edip 30°C'de, benzer renklerle yıkayın. Çamaşır suyu kullanmayın; kurutma makinesi yerine askıda ya da düz serip kurutun. Gerekirse düşük ısıda tersinden ütüleyin.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-AK-001",
+    "name": "Katlamalı Triko Bere – Antrasit Melanj",
+    "category": "aksesuar",
+    "gender": "Unisex",
+    "price": 349,
+    "sizes": [
+      "Standart"
+    ],
+    "colour": "Antrasit Melanj",
+    "featured": false,
+    "images": [
+      "KNT-AK-001-1.jpg",
+      "KNT-AK-001-2.jpg"
+    ],
+    "short_description": "Kalın ribanalı, katlamalı antrasit melanj bere. Soğuk sabah koşularının dostu.",
+    "description": "<p>Kış antrenmanlarında ve şehirde sıcak tutan, kalın ribanalı triko bere. Katlamalı ağzı sayesinde ister kulakları kapatacak şekilde, ister kısa giyebilirsiniz.</p><ul><li>Kalın ribanalı triko örgü</li><li>Katlamalı ağız</li><li>Standart beden, esnek yapı</li></ul><h3>Bakım</h3><p>30°C'de elde ya da hassas programda yıkayın; düz serip kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-AK-002",
+    "name": "Düz Siperli Şapka – Beyaz",
+    "category": "aksesuar",
+    "gender": "Unisex",
+    "price": 399,
+    "sizes": [
+      "Standart"
+    ],
+    "colour": "Beyaz",
+    "featured": false,
+    "images": [
+      "KNT-AK-002-1.jpg"
+    ],
+    "short_description": "Altı panelli, düz siperli beyaz şapka. Logosuz, temiz ve her kombine uyumlu.",
+    "description": "<p>Güneşli günler için sade bir tamamlayıcı. Altı panelli gövdesi ve düz siperiyle modern bir silüet sunar; logosuz yüzeyi her kombine uyum sağlar.</p><ul><li>Altı panelli gövde, havalandırma delikleri</li><li>Düz siper</li><li>Arkadan ayarlanabilir</li></ul><h3>Bakım</h3><p>Nemli bezle silerek ya da elde soğuk suyla yıkayarak temizleyin; makinede yıkamayın, düz bir yüzeyde kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  },
+  {
+    "sku": "KNT-AK-003",
+    "name": "Paslanmaz Çelik Matara – Haki",
+    "category": "aksesuar",
+    "gender": "Unisex",
+    "price": 449,
+    "sizes": [
+      "Standart"
+    ],
+    "colour": "Haki",
+    "featured": false,
+    "images": [
+      "KNT-AK-003-1.jpg"
+    ],
+    "short_description": "Mat dokulu, vidalı kapaklı haki matara. Salonda, ofiste ve yolda.",
+    "description": "<p>Su içmeyi unutmamak için iyi bir neden. Mat yüzeyli paslanmaz çelik gövdesi elde kaymaz, vidalı kapağı çantada güvenle taşınır.</p><ul><li>Paslanmaz çelik gövde</li><li>Mat, kaymayan yüzey</li><li>Vidalı kapak</li></ul><h3>Bakım</h3><p>Elde ılık sabunlu suyla yıkayın; bulaşık makinesine koymayın. Kapağı açık bırakarak kurutun.</p><p><em>Fotoğraflardaki renk tonu ekranınızın ayarlarına göre hafifçe farklı görünebilir.</em></p>"
+  }
+]

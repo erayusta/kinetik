@@ -1,0 +1,40 @@
+/* ==========================================================================
+   cards: ürün ızgarası ve ürün kartı (anasayfa, mağaza, ilgili ürünler, arama).
+   ========================================================================== */
+.product-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 12px; }
+@media (min-width: 768px) { .product-grid { gap: 40px 20px; } .product-grid--3, .product-grid--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1200px) { .product-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+/* WooCommerce'in float tabanlı ul.products stillerini nötrle */
+.woocommerce ul.products::before, .woocommerce ul.products::after { content: none; }
+.woocommerce ul.products li.product { width: auto; float: none; margin: 0; }
+
+.pcard { position: relative; display: flex; flex-direction: column; min-width: 0; }
+.pcard__media { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; background: var(--bone); }
+.pcard__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .35s var(--ease), transform .6s var(--ease); }
+.pcard__img--alt { opacity: 0; }
+@media (hover: hover) {
+  .pcard:hover .pcard__media.has-alt .pcard__img--alt { opacity: 1; }
+  .pcard:hover .pcard__media:not(.has-alt) .pcard__img { transform: scale(1.03); }
+}
+.pcard__media .tag { position: absolute; top: 10px; left: 10px; z-index: 1; }
+.pcard.outofstock .pcard__img { filter: grayscale(.6); opacity: .75; }
+
+.pcard__body { padding-top: 12px; display: grid; gap: 4px; }
+.pcard__cat { font-size: var(--fs-xs); color: var(--muted); }
+.pcard__title { margin: 0; font: 500 var(--fs-sm)/1.35 var(--font-body); }
+.pcard__title a { text-decoration: none; }
+.pcard__title a::after { content: ""; position: absolute; inset: 0 0 auto 0; aspect-ratio: 4 / 5; } /* görsel de bağlantı alanı */
+.pcard__price { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1.1; }
+.pcard__price del { font-size: 1rem; }
+.pcard__price ins { color: var(--ink); background: linear-gradient(transparent 60%, var(--volt) 60%); padding: 0 2px; }
+.pcard__sizes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.pcard__sizes span { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 1px 5px; line-height: 1.4; }
+
+.pcard__actions { margin-top: 10px; }
+.pcard__actions .button { min-height: 38px; padding: 0 14px; font-size: .95rem; --cut: 6px; width: 100%; }
+.pcard__actions .product_type_variable { --btn-bg: transparent; --btn-fg: var(--ink); clip-path: none; box-shadow: inset 0 0 0 1.5px var(--ink); }
+.pcard__actions .product_type_variable:hover { --btn-bg: var(--ink); --btn-fg: var(--paper); }
+.pcard__actions .kinetik-loop-notify { --btn-bg: var(--bone); --btn-fg: var(--ink); }
+/* Varyasyonlu üründe "Beden seç" butonu kartın kendisiyle aynı yere gider — gizli; kart bağlantıdır.
+   Basit ürünlerde (aksesuar) AJAX sepete ekle ve stok yoksa kinetik-growth "Haber ver" görünür. */
+.pcard__actions:has(.product_type_variable:not(.kinetik-loop-notify)) { display: none; }
